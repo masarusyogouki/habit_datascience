@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 
 # 頭2行はスキップして、csvファイルを読み込む
 dir = 'habit'
-df = pd.read_csv(f'{dir}/習慣化.csv',skiprows=2)
+df = pd.read_csv(f'{dir}/習慣化.csv', skiprows=2)
 
 # 週をdatatime型に変換
 df['week'] = pd.to_datetime(df['週'])
